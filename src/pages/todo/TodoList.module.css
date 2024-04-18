@@ -1,0 +1,25 @@
+.tareaPendiente {
+    background: #dbe945;
+    margin: 5px;
+
+}
+.tareaCompletada {
+    background: #0ab41e;
+}
+
+.tareasTotales {
+    font-size: 1em;
+    font-weight: bold;
+
+}
+.panelTareas {
+    background-color: aquamarine;
+    width: 50.00%; 
+    margin: 0 auto;
+    
+}
+.tablaTareas{
+     
+    columns: 5px 50px 15px; 
+    border-radius: 25px;
+}

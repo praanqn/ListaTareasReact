@@ -1,0 +1,39 @@
+/*
+.button{
+    
+    border-radius: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+
+
+*/
+.button {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* Remove border */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline block */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    transition-duration: 0.4s; /* Transition duration */
+    cursor: pointer; /* Cursor pointer */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 9px #999; /* Add shadow */
+  }
+  
+  .button:hover {
+    background-color: #45a049; /* Darker green background color on hover */
+    box-shadow: 0 6px #666; /* Decrease shadow on hover */
+  }
+  
+  .button:active {
+    background-color: #3e8e41; /* Even darker green background color on click */
+    box-shadow: 0 3px #666; /* Decrease shadow further on click */
+    transform: translateY(4px); /* Move button down on click for 3D effect */
+  }
+  
