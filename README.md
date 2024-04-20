@@ -1,8 +1,12 @@
-# Getting Started with Create React App
+# Lista de Tareas creada en React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Integrantes
+
+- Aldana, Pablo Adrián
+- Álvarez, Percy 
+
 
 In the project directory, you can run:
 

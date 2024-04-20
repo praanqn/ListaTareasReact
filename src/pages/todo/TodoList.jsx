@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from "../../components/Button/Button";
 import Input from '../../components/Input/Input';
+import Checkbox from '../../components/Checkbox/Checkbox';
 import style from "./TodoList.module.css";
 
 function TodoList() {
@@ -16,7 +17,9 @@ function TodoList() {
   }, [todos]);
 
   const handleInputChange = (event) => {
+    console.log('teclas pres');
     setInputValue(event.target.value);
+    console.log(event.target.value);
   };
 
   const handleAddTodo = () => {
@@ -47,46 +50,64 @@ function TodoList() {
     todo.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const handleTeclaPresionada = (event) => {
+    console.log('Tecla presionada:', event.key);
+
+    if (event.key === 'Enter') {
+      handleAddTodo();
+    }
+  };
+
+  const handleKeyDown = (event) => {
+      if (event.key === 'Enter') {
+        console.log('do validate')
+      } 
+  };
+
   return (
     <div>
       
       <h1>Lista de Tareas</h1>
-      <p style={{ display: 'flex', alignItems: 'center', justifyContent:'center' }}>
+     <div>
       <Input
-        type="text"
         value={inputValue}
         onChange={handleInputChange}
         placeholder={'Agregar una nueva tarea'}
+       // onKeyPress={handleTeclaPresionada}
+        onKeyDown={handleKeyDown}
       />
       
       <Button onClick={handleAddTodo} text="Agregar Tarea" />
-      </p>
-      <p style={{ display: 'flex', alignItems: 'center', justifyContent:'center' }}>
+      </div>
+      
       <Input
-        type="text"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         placeholder={'Buscar Tareas'}
       />
-      </p>
+      
       
       {filteredTodos.length === 0 ? (
-        <p>No hay tareas para mostrar!</p>
+        <p>No hay tareas para mostrar con los parametros de búsqueda!</p>
       ) : (
       <div className={style.panelTareas}>  
         <table className={style.tablaTareas}>
+          <tbody>
           {filteredTodos.map(todo => (
             
-              <tr>
-              <td><input  type="checkbox" key={todo.id} className={style.tareaPendiente}
-                checked={todo.completed}
-                onChange={() => handleToggleComplete(todo.id)} /></td>
+              <tr key={todo.id}>
+              <td>
+                <Checkbox className={style.tareaPendiente} checked={todo.completed} onChange={() => handleToggleComplete(todo.id)}  />
+              
+                </td>
+                
                 <td>
               <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>{todo.description}</span>
               </td>
               <td><Button onClick={() => handleDeleteTodo(todo.id)} text ="Borrar Tarea" /></td>
             </tr>
           ))}
+          </tbody>
        </table> 
       </div>
       )}
