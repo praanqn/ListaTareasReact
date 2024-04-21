@@ -5,7 +5,36 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Integrantes
 
 - Aldana, Pablo Adrián
-- Álvarez, Percy 
+- Álvarez, Percy
+
+# Mi Aplicación React
+
+Bienvenido a mi aplicación React. Aquí encontrarás una breve descripción de los archivos principales de la aplicación y su función.
+
+## Archivos Principales
+
+### `index.js`
+
+Este archivo es el punto de entrada principal de la aplicación React. Su función principal es renderizar el componente principal de la aplicación en el DOM. También es donde se configura el enrutamiento y se inyectan otros elementos necesarios para la configuración de la aplicación.
+
+### `App.js`
+
+`App.js` es el archivo donde reside el componente principal de la aplicación. Contiene la estructura principal de la interfaz de usuario de la aplicación y define cómo se organizan y se comportan los componentes en la pantalla.
+
+### `index.css`
+
+El archivo `index.css` contiene estilos CSS que se aplican globalmente a la aplicación. Aquí se pueden definir estilos para elementos HTML específicos, clases CSS reutilizables y estilos generales para la aplicación.
+
+### `package.json`
+
+`package.json` es un archivo de configuración para la aplicación Node.js. Contiene metadatos sobre el proyecto, como el nombre, la versión, las dependencias y los scripts de inicio. Aquí se especifican las dependencias del proyecto, incluyendo React y otras bibliotecas necesarias. También se pueden definir scripts personalizados para ejecutar tareas específicas, como iniciar la aplicación, ejecutar pruebas o compilar el código para producción.
+
+## Ejecución de la Aplicación
+
+Para ejecutar la aplicación, primero debes instalar las dependencias utilizando el siguiente comando:
+
+```bash
+npm install
 
 
 In the project directory, you can run:
@@ -72,3 +101,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
