@@ -1,25 +1,47 @@
 .tareaPendiente {
-    background: #dbe945;
-    margin: 5px;
-
+  background: #dbe945;
+  text-align: center;
 }
 .tareaCompletada {
-    background: #0ab41e;
+  background: #0ab41e;
+  text-align: center;
 }
 
 .tareasTotales {
-    font-size: 1em;
-    font-weight: bold;
-
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
 }
 .panelTareas {
-    background-color: aquamarine;
-    width: 50.00%; 
-    margin: 0 auto;
-    
+  background-color: rgb(229, 240, 236);
+  width: 100%;
+  margin: 0 auto;
 }
-.tablaTareas{
-     
-    columns: 5px 50px 15px; 
-    border-radius: 25px;
+.tablaTareas {
+  columns: 5px 50px 15px;
+  border-radius: 25px;
+  width: 100%;
+  border: "1px solid black";
+  border-collapse: collapse;
+}
+
+.tablaTareas th,
+.tablaTareas td {
+  border: 1px solid grey;
+  padding: 8px;
+}
+
+/* Opcional: Estilo para la fila de encabezado */
+.tablaTareas th {
+  background-color: rgb(
+    229,
+    240,
+    236
+  ); /* Color de fondo para los encabezados */
+  font-weight: bold;
+}
+.celda {
+  border: 1px solid black; /* Mantén los bordes de las celdas */
+  border-radius: 10px; /* Establece el radio de los bordes */
+  padding: 8px; /* Añade relleno para separar el contenido del borde */
 }
