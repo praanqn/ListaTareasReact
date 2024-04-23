@@ -11,15 +11,16 @@
 
 */
 .button {
+    
     background-color: #4CAF50; /* Green background color */
     border: none; /* Remove border */
     color: white; /* White text color */
     padding: 15px 32px; /* Padding */
     text-align: center; /* Center text */
     text-decoration: none; /* Remove underline */
-    display: inline-block; /* Display as inline block */
-    font-size: 16px; /* Font size */
-    margin: 4px 2px; /* Margin */
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 10px; /* Margin */
     transition-duration: 0.4s; /* Transition duration */
     cursor: pointer; /* Cursor pointer */
     border-radius: 8px; /* Rounded corners */

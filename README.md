@@ -1,11 +1,18 @@
 # Lista de Tareas creada en React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Integrantes
 
 - Aldana, Pablo Adrián
 - Álvarez, Percy 
+
+## Explicación de las siguientes páginas
+ - index.js : Este archivo es el punto principal de la aplicación React. Es el archivo que se ejecuta primero cuando se carga la aplicación en el navegador. En este archivo, se importa el componente principal de la aplicación (App) y se renderiza el elemento HTML con el id "root" en el archivo index.html.  
+ - App.js :  Este archivo contiene el componente principal de la aplicación React. Aquí se define la estructura general de la interfaz de usuario y se organizan los diferentes componentes de React. Puede contener la lógica de estado principal. Es común que este archivo importe otros componentes y los utilice para construir la interfaz de usuario.
+ - index.css : Contiene estilos globales que se aplican a toda la aplicación. Se utilizar para tener un estilo/diseño uniforme en toda la aplicación.
+ - package-json.js : El archivo package.json es un archivo de configuración para la aplicación. Contiene metadatos sobre la aplicación, como el nombre, la versión, las dependencias y los scripts de ejecución. También se utiliza para administrar las dependencias del proyecto y para especificar comandos personalizados que se pueden ejecutar en el proyecto.
+
+##¿Qué componentes reutilizables cree que debería definir?
 
 
 In the project directory, you can run:

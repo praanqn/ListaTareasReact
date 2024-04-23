@@ -1,0 +1,87 @@
+.tareaPendiente {
+    background: #f1f919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;    
+    width: 60%;
+    font-size: 1.5em;
+    border-radius: 15px;
+
+}
+.tareaCompletada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;    
+    width: 60%;
+    font-size: 1.5em;
+    background: #0ab41e;
+    border-radius: 15px;
+}
+
+.tareasTotales {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;    
+    width: 60%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.panelTareas {
+    background-color: rgb(195, 243, 227);
+    width: 50.00%; 
+    margin: auto;
+    margin-top: 0.5em;
+    border-radius: 15px;
+
+    
+}
+.tablaTareas{
+     
+    columns: 5px 50px 15px; 
+    /* margin: auto; */
+}
+
+.centrado {
+    display: flex;  
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 10vh; /* Set height of container to viewport height for vertical centering */
+  }
+
+  .tcolumnauno{
+    width: '5%';
+    text-align: left;
+    font-weight: bolder;
+  }
+  .tcolumnados{
+    width: '85%';
+    text-align: center;
+    font-weight: bolder;
+  }
+  .tcolumnatres{
+    width: '10%';
+    text-align: right;
+    font-weight: bolder;
+  }
+
+  .columnauno{
+    width: '5%';
+  }
+  .columnados{
+    width: '85%';
+    text-align: left;
+  }
+  .columnatres{
+    width: '10%';
+    align-content: end ;
+  }
+
+  

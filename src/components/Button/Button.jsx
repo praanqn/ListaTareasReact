@@ -5,7 +5,7 @@ import style from "./Button.module.css";
 
 const Button = ({ text, onClick }) => {
     return (
-      <Boton variant="contained"  onClick={onClick} className={style.button}>
+      <Boton variant="contained"  onClick={onClick} className={style.Button}>
         {text}
       </Boton>
     );
