@@ -45,3 +45,6 @@
   border-radius: 10px; /* Establece el radio de los bordes */
   padding: 8px; /* Añade relleno para separar el contenido del borde */
 }
+.redButton {
+  background-color: red !important;
+}
